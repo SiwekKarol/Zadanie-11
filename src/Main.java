@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -18,6 +19,10 @@ public class Main {
             System.out.println("Punkt który podałeś leży w IV ćwiartce");
         } else if (x == 0 && y == 0) {
             System.out.println("Punkt który podałeś jest początkiem układu współrzędnych");
+        } else if (x == 0 && y != 0) {
+            System.out.println("Współrzędna x znajduje się na osi");
+        } else if (y == 0 && x != 0) {
+            System.out.println("Współrzędna y znajduje się na osi");
         }
     }
 }
